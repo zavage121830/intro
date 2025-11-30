@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {	
+	background: #A6A6A6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+/* MAIN CARD */
+.profile-card {
+	width: 900px;
+	background: white;
+	display: grid;
+	grid-template-columns: 1fr 1.4fr;
+	box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+	border: 5px solid #828282; 
+	border-radius: 20px;      
+	overflow: hidden;  
+}
+
+
+/* LEFT IMAGE */
+.profile-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* RIGHT SIDE */
+.profile-content {
+	display: flex;
+	flex-direction: column;
+}
+
+/* NAME SECTION */
+.name-section {
+	background: #3c3f44;
+	padding: 100px; 
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	flex-wrap: nowrap; 
+	overflow: hidden; 
+}
+
+.name-section .name {
+	font-size: 25px;
+   	font-weight: 600;
+	color: white;
+	text-decoration: none;
+	min-width: 0; 
+	white-space: nowrap; 
+}
+
+/* Social icons container */
+.social-icons {
+	display: flex; 
+	align-items: center; 
+	min-width: 0;
+}
+
+/* Individual links inside the social icons container */
+.social-icons a {
+	display: inline-block; 
+	margin-left: 12px;
+}
+
+/* Individual social icon image */
+.social-icons img {
+	width: 25px;        
+	height: auto;       
+	transition: width 0.3s ease-in-out;
+}
+
+/* BILLIARDS SECTION */
+.job-title {
+	background: #000000;
+	padding: 18px 30px;
+	flex-shrink: 0; 
+}
+
+.job-title a {
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+/* SKILLS*/
+.skills {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: end;
+	margin-top: auto;
+}
+
+.skill {
+ 	padding: 30px 0;
+	text-align: center;
+	height: 86px
+	box-sizing: border-box;
+}
+
+.login-button {
+	display: block; 
+	margin-top: 20px; 
+	padding: 10px 15px;
+	background-color: #3c3f44; 
+ 	color: white;
+	text-align: center;
+	text-decoration: none; 
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.login-button:hover {
+	background-color: #0056b3;
+}
+/* Colors */
+.blue { background: #007bff; }
+.green { background: #28a745; }
+.yellow { background: #ffc107; color: #333; }
+.red { background: #dc3545; }
